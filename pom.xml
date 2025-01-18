@@ -12,7 +12,7 @@
 	<artifactId>ambar-audit-service</artifactId>
 	<version>1.0.0</version>
 	<name>ambar-audit-service</name>
-	<description>Audit Service with destination to receive events from Ambar</description>
+	<description>Audit service demonstrating event sourcing with Ambar</description>
 	<url/>
 	<properties>
 		<java.version>21</java.version>
