@@ -53,7 +53,7 @@ curl http://localhost:8099/api/v1/audit/cooking-club/membership/query/list
 
 The response contains the audited membership status:
 ```
-[{"name":"Julian Sanchez","status":"Requested","createdAt":"2025-01-18T21:57:14.645650Z","lastUpdatedAt":"2025-01-18T21:57:14.645650Z"}]A
+[{"name":"Julian Sanchez","status":"Requested","createdAt":"2025-01-18T21:57:14.645650Z","lastUpdatedAt":"2025-01-18T21:57:14.645650Z"}]
 ```
 ## Event Sourcing with Ambar Demo
 
