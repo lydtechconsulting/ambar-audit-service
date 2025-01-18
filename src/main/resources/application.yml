@@ -1,0 +1,30 @@
+spring:
+    application:
+        name: ambar-audit-service
+    datasource:
+        driverClassName: org.postgresql.Driver
+        # URL for running within docker network
+        url: jdbc:postgresql://postgres-audit:5432/postgres?currentSchema=audit
+        # URL for running locally with dockerised postgres
+        #url: jdbc:postgresql://localhost:5433/postgres?currentSchema=audit
+        username: postgres
+        password: postgres
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        properties:
+            hibernate:
+                default_schema: audit
+        hibernate:
+            ddl-auto: validate
+        generate-ddl: false
+    data:
+        rest:
+            detection-strategy: annotated
+    flyway:
+        schemas: audit
+    jackson:
+        deserialization:
+            fail-on-unknown-properties: false
+
+server:
+    port: 8099

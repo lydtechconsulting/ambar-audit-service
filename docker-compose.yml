@@ -1,0 +1,34 @@
+services:
+    postgres-audit:
+        container_name: postgres-audit
+        image: postgres:16.4
+        restart: always
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - '5433:5432'
+        volumes:
+            - postgres-audit:/var/lib/postgresql/data
+        networks:
+            local-development_event-sourcing:
+                ipv4_address: 172.94.0.113
+
+    ambar-audit-service:
+        image: ambar-audit-service
+        container_name: ambar-audit-service
+        restart: always
+        expose:
+            - 8099
+        ports:
+            - "8099:8099"
+        networks:
+            local-development_event-sourcing:
+                ipv4_address: 172.94.0.114
+
+volumes:
+    postgres-audit: {}
+
+networks:
+    local-development_event-sourcing:
+        external: true

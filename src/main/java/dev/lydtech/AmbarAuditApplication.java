@@ -1,13 +1,12 @@
-package dev.lydtech.ambar.example_ambar_destination;
+package dev.lydtech;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExampleAmbarDestinationApplication {
+public class AmbarAuditApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExampleAmbarDestinationApplication.class, args);
+		SpringApplication.run(AmbarAuditApplication.class, args);
 	}
-
 }
