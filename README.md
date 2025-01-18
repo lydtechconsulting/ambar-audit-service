@@ -57,6 +57,6 @@ The response contains the audited membership status:
 ```
 ## Event Sourcing with Ambar Demo
 
-The demo adds this new service to an existing deployment that already has historic events stored in the event store.  It demonstrates that those events will be delivered to the new application when the Ambar emulator is restarted.
+The demo adds this new service to an existing deployment that already has historic events stored in the event store.  It demonstrates that those events are delivered to the new application when the Ambar emulator is restarted.
 
 The steps to run the demo are in the `ambar-event-sourcing` project [Readme](https://github.com/lydtechconsulting/ambar-event-sourcing/blob/main/README.md) file.
