@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AmbarAuditApplication {
+public class AmbarEnquiryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AmbarAuditApplication.class, args);
+		SpringApplication.run(AmbarEnquiryApplication.class, args);
 	}
 }

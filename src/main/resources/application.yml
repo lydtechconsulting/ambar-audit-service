@@ -1,19 +1,19 @@
 spring:
     application:
-        name: ambar-audit-service
+        name: ambar-enquiry-service
     datasource:
         driverClassName: org.postgresql.Driver
         # URL for running within docker network
-        url: jdbc:postgresql://postgres-audit:5432/postgres?currentSchema=audit
+        url: jdbc:postgresql://postgres-enquiry:5432/postgres?currentSchema=enquiry
         # URL for running locally with dockerised postgres
-        #url: jdbc:postgresql://localhost:5433/postgres?currentSchema=audit
+        #url: jdbc:postgresql://localhost:5433/postgres?currentSchema=enquiry
         username: postgres
         password: postgres
     jpa:
         database-platform: org.hibernate.dialect.PostgreSQLDialect
         properties:
             hibernate:
-                default_schema: audit
+                default_schema: enquiry
         hibernate:
             ddl-auto: validate
         generate-ddl: false
@@ -21,7 +21,7 @@ spring:
         rest:
             detection-strategy: annotated
     flyway:
-        schemas: audit
+        schemas: enquiry
     jackson:
         deserialization:
             fail-on-unknown-properties: false

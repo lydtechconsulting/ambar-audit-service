@@ -1,4 +1,4 @@
-package dev.lydtech.audit.api;
+package dev.lydtech.enquiry.api;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MembershipStatusResponse {
+public class MembershipResponse {
     private String name;
     private String status;
     private String createdAt;

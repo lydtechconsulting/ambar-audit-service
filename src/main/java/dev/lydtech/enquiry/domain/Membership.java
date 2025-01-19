@@ -1,4 +1,4 @@
-package dev.lydtech.audit.domain;
+package dev.lydtech.enquiry.domain;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -24,7 +24,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class MembershipAudit implements Serializable {
+public class Membership implements Serializable {
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")

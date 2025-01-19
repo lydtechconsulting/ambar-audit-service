@@ -1,4 +1,4 @@
-package dev.lydtech.audit.domain;
+package dev.lydtech.enquiry.domain;
 
 public enum MembershipStatus {
 
@@ -10,7 +10,7 @@ public enum MembershipStatus {
         try {
             return MembershipStatus.valueOf(status);
         } catch (IllegalArgumentException e) {
-            throw new IllegalArgumentException("Invalid MembershipStatus: " + status);
+            throw new IllegalArgumentException("Invalid MembershipStatusEnum: " + status);
         }
     }
 }

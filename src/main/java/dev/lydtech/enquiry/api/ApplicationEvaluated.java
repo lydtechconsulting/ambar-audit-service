@@ -1,6 +1,6 @@
-package dev.lydtech.audit.api;
+package dev.lydtech.enquiry.api;
 
-import dev.lydtech.audit.domain.MembershipStatus;
+import dev.lydtech.enquiry.domain.MembershipStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

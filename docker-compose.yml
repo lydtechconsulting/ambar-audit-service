@@ -1,6 +1,6 @@
 services:
-    postgres-audit:
-        container_name: postgres-audit
+    postgres-enquiry:
+        container_name: postgres-enquiry
         image: postgres:16.4
         restart: always
         environment:
@@ -9,14 +9,14 @@ services:
         ports:
             - '5433:5432'
         volumes:
-            - postgres-audit:/var/lib/postgresql/data
+            - postgres-enquiry:/var/lib/postgresql/data
         networks:
             local-development_event-sourcing:
                 ipv4_address: 172.94.0.113
 
-    ambar-audit-service:
-        image: ambar-audit-service
-        container_name: ambar-audit-service
+    ambar-enquiry-service:
+        image: ambar-enquiry-service
+        container_name: ambar-enquiry-service
         restart: always
         expose:
             - 8099
@@ -27,7 +27,7 @@ services:
                 ipv4_address: 172.94.0.114
 
 volumes:
-    postgres-audit: {}
+    postgres-enquiry: {}
 
 networks:
     local-development_event-sourcing:

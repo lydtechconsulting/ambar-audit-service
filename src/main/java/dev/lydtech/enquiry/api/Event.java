@@ -1,4 +1,4 @@
-package dev.lydtech.audit.api;
+package dev.lydtech.enquiry.api;
 
 public abstract class Event {
 }

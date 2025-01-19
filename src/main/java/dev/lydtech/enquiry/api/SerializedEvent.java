@@ -1,7 +1,6 @@
-package dev.lydtech.audit.api;
+package dev.lydtech.enquiry.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.JsonNode;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
