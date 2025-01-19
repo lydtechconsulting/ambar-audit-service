@@ -1,0 +1,25 @@
+services:
+    postgres-enquiry:
+        container_name: postgres-enquiry
+        image: postgres:16.4
+        restart: always
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - '5433:5432'
+        volumes:
+            - postgres-enquiry:/var/lib/postgresql/data
+
+
+    ambar-enquiry-service:
+        image: ambar-enquiry-service
+        container_name: ambar-enquiry-service
+        restart: always
+        expose:
+            - 8099
+        ports:
+            - "8099:8099"
+
+volumes:
+    postgres-enquiry: {}
