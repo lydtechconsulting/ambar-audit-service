@@ -1,4 +1,4 @@
-# Enquiry Service for Event Sourcing with Ambar Demo
+# Enquiry Service Demonstrating Event Sourcing with Ambar
 
 This repository contains an enquiry service Spring Boot application for cookery club memberships.
 
